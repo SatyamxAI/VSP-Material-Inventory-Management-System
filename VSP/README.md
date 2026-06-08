@@ -39,12 +39,12 @@ http://localhost:3000
 
 | Role | Email | Password |
 |------|-------|----------|
-| Admin | admin@vsp.com | VSP@2024 |
-| Store Manager | store@vsp.com | VSP@2024 |
-| Dept. Head (BF) | bf.head@vsp.com | VSP@2024 |
-| Dept. Head (SMS) | sms.head@vsp.com | VSP@2024 |
-| Dept. User (BF) | bf.user@vsp.com | VSP@2024 |
-| Dept. User (SMS) | sms.user@vsp.com | VSP@2024 |
+| Admin | admin@vsp.com | VSP@2026 |
+| Store Manager | store@vsp.com | VSP@2026 |
+| Dept. Head (BF) | bf.head@vsp.com | VSP@2026 |
+| Dept. Head (SMS) | sms.head@vsp.com | VSP@2026 |
+| Dept. User (BF) | bf.user@vsp.com | VSP@2026 |
+| Dept. User (SMS) | sms.user@vsp.com | VSP@2026 |
 
 ---
 
@@ -62,7 +62,7 @@ Engine:    Intelligent Material Allocation Engine
 
 | Module | Description |
 |--------|-------------|
-| Material Master | Complete material catalog with 40+ seed items |
+| Material Master | Complete material catalog with 100+ seed items |
 | Material Requisition Cart | Multi-item cart-based requisition system |
 | Approval Workflow | Department Head → Store Manager pipeline |
 | Allocation Engine | Priority-based intelligent allocation (NOT FCFS) |
@@ -125,7 +125,7 @@ Inventory Updated + Transactions Recorded
 | department_priorities | Allocation priority scores |
 | users | All system users |
 | material_categories | 15 material categories |
-| materials | 40+ materials with stock tracking |
+| materials | 100+ materials with stock tracking |
 | request_types | 5 request types with priority weights |
 | material_requests | Request headers (cart) |
 | material_request_items | Line items per request |
@@ -152,6 +152,7 @@ VSP/
 │   ├── departmentController.js  # Department listing
 │   ├── userController.js        # User CRUD
 │   ├── alertController.js       # Alert management
+│   ├── exportController.js      # PDF & Excel export pipelines
 │   ├── inventoryController.js   # Transactions, reservations
 │   └── reportController.js      # All report queries
 ├── database/
@@ -166,6 +167,7 @@ VSP/
 ├── services/
 │   ├── AllocationEngine.js      # Intelligent allocation engine
 │   ├── AlertEngine.js           # Stock alert engine
+│   ├── alertService.js          # Core alert services
 │   └── AuditService.js          # Audit logging service
 ├── public/
 │   ├── index.html               # Single page application shell

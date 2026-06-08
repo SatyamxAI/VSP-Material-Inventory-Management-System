@@ -138,7 +138,65 @@ INSERT IGNORE INTO materials (id, material_code, material_name, category_id, uni
 (48, 'PAINT-03','Anti-Corrosion Paint (Marine)',   11,'Ltrs', 'R-K2', 180,   0,  40, 80,  185.00),
 -- Misc
 (49, 'MISC-001','Cotton Waste (Rags) 5Kg Bale',   12,'Nos',  'R-L1', 320,  20,  80,150,   45.00),
-(50, 'MISC-002','Teflon Tape 12mm x 12m (Box 50)',12,'Box',  'R-L2',  88,   5,  20, 40,  125.00);
+(50, 'MISC-002','Teflon Tape 12mm x 12m (Box 50)',12,'Box',  'R-L2',  88,   5,  20, 40,  125.00),
+-- Heavy Machinery & High-Value Spares (VSP specific)
+(51, 'HV-001', 'ABB 5000kW Main Mill AC Motor',        5, 'Nos',  'WH-H1',   3,   0,   1,   1, 12500000.00),
+(52, 'HV-002', 'Siemens 11kV/433V 5MVA Transformer',   5, 'Nos',  'WH-H1',   4,   0,   1,   2,  4800000.00),
+(53, 'HV-003', 'SMS Converter Drive Gearbox Assy',     12,'Nos',  'WH-H2',   2,   0,   1,   1, 18500000.00),
+(54, 'HV-004', 'Blast Furnace Bell-Less Top Chute',    12,'Nos',  'WH-H2',   5,   1,   2,   2,  4200000.00),
+(55, 'HV-005', 'Steel Cord Conveyor Belt ST-2000',     2, 'Mtrs', 'WH-H3', 5000,  0, 1000,2000,   18500.00),
+(56, 'HV-006', 'Main Blower Turbine Rotor (BF)',       12,'Nos',  'WH-H3',   2,   0,   1,   1, 22000000.00),
+(57, 'HV-007', 'Ladle Transfer Car Wheel Assembly',    12,'Nos',  'WH-H4',  24,   4,   8,  12,   850000.00),
+(58, 'HV-008', 'Continuous Caster Copper Mould',       12,'Nos',  'WH-H4',  16,   2,   4,   8,  3200000.00),
+(59, 'HV-009', 'Roll Mill Backup Roll (Forged Steel)', 12,'Nos',  'WH-H5',  12,   0,   4,   6,  5500000.00),
+(60, 'HV-010', 'High Pressure Descaling Pump Unit',    10,'Nos',  'WH-H5',   4,   0,   1,   2,  7500000.00),
+-- Refractories (Massive bulk quantities)
+(61, 'REF-001', 'Magnesia Carbon Bricks (SMS Ladle)',  12,'Tons', 'WH-R1', 850,  50, 200, 400, 185000.00),
+(62, 'REF-002', 'High Alumina Bricks (BF Stove)',      12,'Tons', 'WH-R1',1200,   0, 300, 500,  95000.00),
+(63, 'REF-003', 'Silica Bricks (Coke Oven)',           12,'Tons', 'WH-R2', 650,   0, 150, 300, 125000.00),
+(64, 'REF-004', 'Castable Refractory (Low Cement)',    12,'Tons', 'WH-R2', 450,  20, 100, 200,  85000.00),
+-- Bulk Raw/Consumables
+(65, 'RAW-001', 'Ferro Manganese (High Carbon)',       12,'Tons', 'WH-B1',2500, 100, 500,1000,  82000.00),
+(66, 'RAW-002', 'Ferro Silicon (70% Si)',              12,'Tons', 'WH-B1',1800,   0, 400, 800, 115000.00),
+(67, 'RAW-003', 'Silico Manganese',                    12,'Tons', 'WH-B2',3200,   0, 600,1200,  78000.00),
+(68, 'RAW-004', 'Calcined Petroleum Coke (CPC)',       12,'Tons', 'WH-B2',1500,   0, 300, 600,  45000.00),
+(69, 'RAW-005', 'Aluminum Notch Bar (99% Purity)',     12,'Tons', 'WH-B3', 450,  10, 100, 200, 210000.00),
+(70, 'RAW-006', 'Fluorspar (CaF2 > 85%)',              12,'Tons', 'WH-B3', 800,   0, 200, 400,  35000.00),
+-- Huge Bearings & Mechanics
+(71, 'HV-011', 'Four-Row Cylindrical Roller Bearing',  1, 'Nos',  'WH-H6',  18,   2,   4,   8, 1250000.00),
+(72, 'HV-012', 'Spherical Roller Bearing (Large)',     1, 'Nos',  'WH-H6',  35,   0,  10,  15,  450000.00),
+(73, 'HV-013', 'Main Mill Universal Joint Spindle',    12,'Nos',  'WH-H7',   6,   0,   2,   3, 4800000.00),
+(74, 'HV-014', 'Overhead Crane Hoist Wire Rope (32mm)',12,'Mtrs', 'WH-H7',3000,   0, 500,1000,    4500.00),
+(75, 'HV-015', 'Sinter Plant Exhauster Fan Impeller',  12,'Nos',  'WH-H8',   3,   0,   1,   1, 8500000.00),
+-- Massive Electricals
+(76, 'ELEC-103','33kV VCB Panel Board',                5, 'Nos',  'WH-E1',  12,   0,   2,   4, 1800000.00),
+(77, 'ELEC-104','HT Power Cable 3Cx300 sqmm 33kV',     5, 'Mtrs', 'WH-E2',8000,   0,1000,2000,   12500.00),
+(78, 'ELEC-105','Variable Frequency Drive 1000kW',     5, 'Nos',  'WH-E3',   8,   1,   2,   4, 3200000.00),
+(79, 'ELEC-106','Slip Ring Motor 2500kW',              5, 'Nos',  'WH-E3',   5,   0,   1,   2, 6500000.00),
+-- Piping & Valves
+(80, 'PIPE-101','CS Seamless Pipe 24" SCH 80',         6, 'Mtrs', 'WH-P1', 600,   0, 100, 200,   45000.00),
+(81, 'PIPE-102','SS 316L Pipe 12" SCH 40',             6, 'Mtrs', 'WH-P2', 400,  20,  50, 100,   68000.00),
+(82, 'PIPE-103','Motorized Gate Valve 24" 300#',       6, 'Nos',  'WH-P3',  15,   0,   3,   5, 1450000.00),
+(83, 'PIPE-104','Butterfly Valve 48" Pneumatic',       6, 'Nos',  'WH-P4',  10,   0,   2,   3, 2100000.00),
+-- Hydraulic & Pneumatic
+(84, 'HYDR-101','Hydraulic Power Pack Unit 500L',      10,'Nos',  'WH-J1',   8,   0,   2,   4, 1650000.00),
+(85, 'HYDR-102','Proportional Directional Valve',      10,'Nos',  'WH-J2',  45,   5,  10,  20,  280000.00),
+(86, 'HYDR-103','High Pressure Accumulator 50L',       10,'Nos',  'WH-J2',  30,   0,   5,  10,  450000.00),
+(87, 'HYDR-104','Servo Valve (Moog) High Response',    10,'Nos',  'WH-J3',  25,   2,   5,  10,  620000.00),
+-- Consumables (Large scale)
+(88, 'LUB-101', 'Hydraulic Oil VG-68 (Bulk Tank)',     3, 'Ltrs', 'WH-L1',45000,  0,10000,20000,   175.00),
+(89, 'LUB-102', 'Turbine Oil ISO VG-46 (Bulk)',        3, 'Ltrs', 'WH-L1',25000,  0, 5000,10000,   220.00),
+(90, 'LUB-103', 'Heavy Duty Grease EP-2 (Barrel 180kg)',3,'Drum', 'WH-L2', 400,  10,  50, 100,  45000.00),
+(91, 'WELD-101','Submerged Arc Welding Flux',          9, 'Kg',   'WH-W1',15000,  0, 2000,5000,    125.00),
+(92, 'WELD-102','Flux Cored Wire 1.6mm (15kg spool)',  9, 'Reel', 'WH-W1',1200,  50, 200, 400,   3500.00),
+(93, 'SAFE-101','FR Coveralls (Fire Retardant)',       8, 'Nos',  'WH-S1',3500, 100, 500,1000,   2800.00),
+(94, 'SAFE-102','SCBA Sets (Breathing Apparatus)',     8, 'Nos',  'WH-S2', 150,   5,  20,  40,  45000.00),
+(95, 'PAINT-101','Epoxy Coating (Part A+B) 200L Drum', 11,'Drum', 'WH-C1', 250,   0,  40,  80,  65000.00),
+(96, 'PAINT-102','Polyurethane Finish Coat 200L',      11,'Drum', 'WH-C1', 180,   0,  30,  60,  85000.00),
+(97, 'FAST-101','Hardeox Wear Plates 20mm',            4, 'Nos',  'WH-D1', 450,  20, 100, 200,  35000.00),
+(98, 'FAST-102','Structural Steel Bolts M36 (Box 50)', 4, 'Box',  'WH-D2', 800,   0, 150, 300,   8500.00),
+(99, 'MISC-101','Graphite Electrodes (UHP) 600mm',     12,'Nos',  'WH-M1', 250,  10,  50, 100, 850000.00),
+(100,'MISC-102','Copper Tuyeres for Blast Furnace',    12,'Nos',  'WH-M2', 120,   5,  20,  40, 320000.00);
 
 -- ============================================================
 -- USERS
@@ -431,7 +489,6 @@ VALUES
 
 -- ============================================================
 -- INVENTORY TRANSACTIONS — 6 months (Jan to Jun)
--- This gives the charts real data to show
 -- ============================================================
 INSERT IGNORE INTO inventory_transactions
   (id, transaction_no, transaction_type, material_id, department_id, request_id, allocation_id,
@@ -571,9 +628,6 @@ UPDATE materials SET reserved_stock = 30 WHERE id = 36; -- SAFE-003 (REQ-031)
 UPDATE materials SET reserved_stock = 15 WHERE id = 49; -- MISC-001 (REQ-031)
 UPDATE materials SET reserved_stock = 5  WHERE id = 44; -- HYDR-002 (REQ-035)
 
--- ============================================================
--- CORRECT CURRENT STOCK to realistic levels after all transactions
--- (These are the final stock values after 6 months of activity)
 -- ============================================================
 UPDATE materials SET current_stock = 368  WHERE id = 1;   -- BRG-001
 UPDATE materials SET current_stock = 202  WHERE id = 2;   -- BRG-002
